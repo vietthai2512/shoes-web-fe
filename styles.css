@@ -185,6 +185,7 @@ Navbar
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	position: sticky;
 }
 
 .nav-utils {
