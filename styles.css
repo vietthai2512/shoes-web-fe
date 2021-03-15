@@ -179,6 +179,18 @@ p {
 .text-bold {
 	font-weight: 500;
 }
+
+.fix-z-index {
+	z-index: 100;
+}
+
+.hover-underline {
+	border-bottom: 2px solid transparent;
+}
+
+.hover-underline:hover {
+	border-bottom: 2px solid var(--clr-grey-1);
+}
 /*
 =============== 
 Navbar
@@ -245,6 +257,20 @@ Navbar
 	width: 100%;
 	height: 3.75rem;
 	padding: 0 10rem;
+}
+
+.nav-center-links {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 100%;
+}
+
+.nav-center-links .nav-links {
+	width: fit-content;
+	height: 100%;
+	margin: auto;
 }
 
 .nav-center-right {
@@ -423,12 +449,25 @@ Navbar
 	}
 	.nav-links {
 		display: flex;
+		align-items: center;
 		/* font-size: 1.5rem; */
 		/*text-transform: capitalize;*/
 	}
+
+	.nav-links li {
+		height: 100%;
+	}
+
+	.nav-links a {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
 	.nav-link {
 		color: var(--clr-grey-1);
-		margin-right: 1rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
 		letter-spacing: var(--spacing);
 		transition: var(--transition);
 		font-size: 1rem;
