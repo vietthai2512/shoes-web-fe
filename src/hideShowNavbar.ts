@@ -1,9 +1,9 @@
-import { getElement } from './utils.js';
+import { getElement, throttled } from './utils.js';
 
 let prevScrollPos = window.pageYOffset;
-let navbar = getElement('.navbar') as HTMLElement;
+let navbar = getElement('.nav-center-wrapper') as HTMLElement;
 
-window.onscroll = () =>
+window.addEventListener('scroll', throttled(() =>
 {
     let currScrollPos = window.pageYOffset;
     if (prevScrollPos > currScrollPos)
@@ -12,7 +12,7 @@ window.onscroll = () =>
     }
     else 
     {
-        navbar.style.top = '-6rem';
+        navbar.style.top = '-4rem';
     }
     prevScrollPos = currScrollPos;
-};
+}));
