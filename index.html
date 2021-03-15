@@ -15,75 +15,82 @@
 <body>
     <!-- start of navbar -->
     <nav class="navbar">
-        <div class="nav-utils">
-            <ul class="nav-links">
-                <li>
-                    <a href="/" class="nav-link">log in</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-center">
-            <!-- links -->
-            <div>
-                <button class="toggle-nav">
-                    <i class="fas fa-bars"></i>
-                </button>
+        <div class="nav-utils-wrapper">
+            <div class="nav-utils">
                 <ul class="nav-links">
                     <li>
-                        <a href="index.html" class="nav-link">home</a>
-                    </li>
-                    <li>
-                        <a href="products.html" class="nav-link">products</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="nav-link">about</a>
+                        <a href="/" class="nav-link text-bold">log in</a>
                     </li>
                 </ul>
             </div>
-            <!-- logo -->
-            <div class="nav-logo">
-                <a href="/">Tikee</a>
-            </div>
-            <!-- <img src="./images/logo-white.svg" class="nav-logo" alt="logo" /> -->
-            <div class="nav-center-right">
-                <div class="pre-search-input-box" type="search">
-                    <button class="pre-search-btn" data-var="vsButton" aria-label="Search">
-                        <svg class="pre-search-input-icon" fill="#111" height="1.5rem" width="1.5rem"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z">
-                            </path>
-                        </svg>
-                    </button>
-                    <input type="text" id="VisualSearchInput" class="pre-search-input" name="search" autocomplete="off"
-                        tabindex="0" placeholder="search">
-                    <button class="pre-clear-search" data-var="vsClearSearch">
-                        <svg class="search-clear-icon" fill="#111" height="1.5rem" width="1.5rem" viewBox="0 0 24 24">
-                            <path
-                                d="M22 20H7.3c-.3 0-.6-.1-.8-.4l-5.3-7c-.3-.4-.3-.9 0-1.2l5.3-7c.2-.3.5-.4.8-.4H22c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1zM7.8 18H21V6H7.8l-4.6 6 4.6 6zm8.2-3c-.3 0-.5-.1-.7-.3L14 13.4l-1.3 1.3c-.4.4-1 .4-1.4 0s-.4-1 0-1.4l1.3-1.3-1.3-1.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l1.3 1.3 1.3-1.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L15.4 12l1.3 1.3c.4.4.4 1 0 1.4-.2.2-.5.3-.7.3z">
-                            </path>
-                        </svg>
-                    </button>
+        </div>
 
+        <div class="nav-center-wrapper">
+            <div class="nav-center">
+                <!-- links -->
+                <div>
+                    <button class="toggle-nav">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="index.html" class="nav-link">home</a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="nav-link">products</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">about</a>
+                        </li>
+                    </ul>
                 </div>
+                <!-- logo -->
+                <div class="nav-logo">
+                    <a href="/">Tikee</a>
+                </div>
+                <!-- <img src="./images/logo-white.svg" class="nav-logo" alt="logo" /> -->
+                <div class="nav-center-right">
+                    <div class="pre-search-input-box" type="search">
+                        <button class="pre-search-btn" data-var="vsButton" aria-label="Search">
+                            <svg class="pre-search-input-icon" fill="#111" height="1.5rem" width="1.5rem"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input type="text" id="VisualSearchInput" class="pre-search-input" name="search"
+                            autocomplete="off" tabindex="0" placeholder="search">
+                        <button class="pre-clear-search" data-var="vsClearSearch">
+                            <svg class="search-clear-icon" fill="#111" height="1.5rem" width="1.5rem"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 20H7.3c-.3 0-.6-.1-.8-.4l-5.3-7c-.3-.4-.3-.9 0-1.2l5.3-7c.2-.3.5-.4.8-.4H22c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1zM7.8 18H21V6H7.8l-4.6 6 4.6 6zm8.2-3c-.3 0-.5-.1-.7-.3L14 13.4l-1.3 1.3c-.4.4-1 .4-1.4 0s-.4-1 0-1.4l1.3-1.3-1.3-1.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l1.3 1.3 1.3-1.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L15.4 12l1.3 1.3c.4.4.4 1 0 1.4-.2.2-.5.3-.7.3z">
+                                </path>
+                            </svg>
+                        </button>
+
+                    </div>
 
 
-                <!-- <ul class="nav-links">
+                    <!-- <ul class="nav-links">
                     <li>
                         <a href="/" class="nav-link">log in</a>
                     </li>
                 </ul> -->
 
-                <!-- cart icon -->
-                <div class="toggle-container">
-                    <button class="toggle-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </button>
-                    <span class="cart-item-count">2</span>
+                    <!-- cart icon -->
+                    <div class="toggle-container">
+                        <button class="toggle-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <span class="cart-item-count">2</span>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </nav>
     <!-- end of navbar -->
 
