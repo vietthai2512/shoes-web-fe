@@ -1,0 +1,23 @@
+{
+  "name": "shoes-web-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vietthai2512/shoes-web-fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vietthai2512/shoes-web-fe/issues"
+  },
+  "homepage": "https://github.com/vietthai2512/shoes-web-fe#readme",
+  "dependencies": {
+    "typescript": "^4.2.3"
+  }
+}
