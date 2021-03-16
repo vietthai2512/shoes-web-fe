@@ -24,10 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: install node v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          
+      - name: yarn install
+        run: yarn install
 
       # Runs a single command using the runners shell
       - name: Build TS files 
-        run: tsc
+        uses: icrawl/action-tsc@v1
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
