@@ -129,6 +129,7 @@ p {
 .img {
 	width: 100%;
 	display: block;
+	/* max-width: 100%; */
 }
 .text-slanted {
 	font-family: "Kaushan Script", cursive;
@@ -222,7 +223,7 @@ Navbar
 	display: flex;
 	justify-content: flex-end;
 	background: #f5f5f5;
-	padding: 0 10rem;
+	padding: 0 2rem;
 }
 
 .nav-utils .nav-links {
@@ -256,7 +257,7 @@ Navbar
 	align-items: center;
 	width: 100%;
 	height: 3.75rem;
-	padding: 0 10rem;
+	padding: 0 2rem;
 }
 
 .nav-center-links {
@@ -408,6 +409,10 @@ Navbar
 	color: var(--clr-grey-1);
 	cursor: pointer;
 	border: 0;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .toggle-cart:hover,
@@ -420,18 +425,35 @@ Navbar
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--clr-white);
-	font-weight: bold;
-	font-size: 1rem;
+	color: var(--clr-grey-1);
+	font-size: 0.75rem;
 	align-self: flex-start;
-	position: relative;
-	background: var(--clr-primary-5);
-	width: 1.25rem;
-	height: 1.25rem;
-	border-radius: 50%;
-	right: 0.75rem;
-	bottom: 0.25rem;
-	margin-right: -0.75rem;
+	position: absolute;
+	width: 2.5rem;
+	height: 2.5rem;
+	top: 0.75rem;
+}
+
+@media screen and (max-width: 991px) {
+	.nav-utils-wrapper {
+		display: none;
+	}
+
+	.pre-search-input {
+		display: none;
+	}
+
+	.pre-search-input-box {
+		margin-right: 0;
+	}
+
+	.pre-search-btn {
+		position: relative;
+	}
+
+	.toggle-fav {
+		margin-right: 0;
+	}
 }
 
 @media screen and (min-width: 800px) {
@@ -476,11 +498,7 @@ Navbar
 		color: var(--clr-primary-5);
 	}
 }
-@media screen and (min-width: 992px) {
-	.nav-logo {
-		/* left: 50%; */
-	}
-}
+
 /* page navbar */
 .page .nav-link {
 	color: var(--clr-grey-1);
