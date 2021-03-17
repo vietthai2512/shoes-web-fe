@@ -702,12 +702,12 @@ Cart
 	transform: translateX(0);
 }
 .cart-close {
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	background: transparent;
 	border-color: transparent;
-	color: var(--clr-grey-5);
+	/* color: var(--clr-grey-5); */
 	position: absolute;
-	top: 0.5rem;
+	top: 1rem;
 	left: 1rem;
 	cursor: pointer;
 }
