@@ -192,6 +192,22 @@ p {
 .hover-underline:hover {
 	border-bottom: 2px solid var(--clr-grey-1);
 }
+
+.nav-utils-font {
+	color: var(--clr-grey-1);
+	padding: 0 0.5rem;
+	letter-spacing: var(--spacing);
+	transition: var(--transition);
+	font-size: 0.8rem;
+}
+
+.nav-center-font {
+	color: var(--clr-grey-1);
+	padding: 0 1rem;
+	letter-spacing: var(--spacing);
+	transition: var(--transition);
+	font-size: 1rem;
+}
 /*
 =============== 
 Navbar
@@ -238,6 +254,52 @@ Navbar
 .nav-utils a {
 	margin: 0;
 	font-size: 0.8rem;
+}
+
+.lang-selector {
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.lang-list {
+	z-index: 103;
+	position: fixed;
+	top: 2.25rem;
+	background: #f5f5f5;
+	/* padding: 0.5rem; */
+	border-radius: 0 0 0.5rem 0.5rem;
+	visibility: hidden;
+	box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+}
+
+.lang-list a {
+	line-height: 1.5rem;
+	transition-property: none;
+}
+
+.lang-selector-label::after {
+	content: "▼";
+}
+
+#lang-selector-checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#lang-selector-checkbox:checked {
+	border: 1px solid red;
+	box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+}
+
+#lang-selector-checkbox:checked ~ .lang-list {
+	visibility: visible;
 }
 
 .nav-center-wrapper {
@@ -488,12 +550,11 @@ Navbar
 	}
 
 	.nav-link {
-		color: var(--clr-grey-1);
-		padding-right: 1rem;
-		padding-left: 1rem;
+		/* color: var(--clr-grey-1);
+		padding: 0 0.5rem;
 		letter-spacing: var(--spacing);
 		transition: var(--transition);
-		font-size: 1rem;
+		font-size: 1rem; */
 	}
 	.nav-link:hover {
 		color: var(--clr-primary-5);
