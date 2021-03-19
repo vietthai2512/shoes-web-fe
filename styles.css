@@ -691,24 +691,32 @@ Sidebar
 	z-index: 100;
 }
 .sidebar {
-	width: 90vw;
-	height: 95vh;
-	max-width: var(--fixed-width);
 	background: var(--clr-white);
 	border-radius: var(--radius);
 	box-shadow: var(--dark-shadow);
-	position: relative;
 	padding: 4rem;
-	transform: scale(0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 400px;
+	/* background: var(--clr-grey-10); */
+	/* padding: 3rem 1rem 0 1rem; */
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	transition: var(--transition);
+	transform: translateX(-100%);
+	overflow: scroll;
 }
 .show .sidebar {
-	transform: scale(1);
+	transform: translateX(0);
 }
 .sidebar-close {
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	background: transparent;
 	border-color: transparent;
-	color: var(--clr-grey-5);
+	/* color: var(--clr-grey-5); */
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
