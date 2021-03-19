@@ -264,14 +264,15 @@ Navbar
 }
 
 .lang-list {
-	z-index: 103;
+	z-index: 1;
 	position: fixed;
 	top: 2.25rem;
 	background: #f5f5f5;
 	/* padding: 0.5rem; */
 	border-radius: 0 0 0.5rem 0.5rem;
 	visibility: hidden;
-	box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+	box-shadow: -5px 4px 6px rgb(32 33 36 / 28%),
+		5px 4px 6px rgb(32 33 36 / 28%);
 }
 
 .lang-list a {
@@ -281,6 +282,10 @@ Navbar
 
 .lang-selector-label::after {
 	content: "▼";
+}
+
+#lang-selector-checkbox:checked ~ .lang-selector-label::after {
+	content: "▲";
 }
 
 #lang-selector-checkbox {
