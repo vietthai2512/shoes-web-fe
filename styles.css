@@ -695,7 +695,7 @@ Sidebar
 	background: var(--clr-white);
 	border-radius: var(--radius);
 	box-shadow: var(--dark-shadow);
-	padding: 2rem 1rem;
+	padding: 3.5rem 2rem;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -720,10 +720,19 @@ Sidebar
 	top: 1rem;
 	right: 1rem;
 	cursor: pointer;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 100px;
+	outline: none;
 }
+
+.sidebar-close:hover {
+	background: #e5e5e5;
+}
+
 .sidebar-link {
 	font-size: 1.5rem;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	color: var(--clr-grey-1);
 }
 .sidebar-link i {
@@ -765,7 +774,7 @@ Cart
 	height: 100%;
 	max-width: 320px;
 	background: var(--clr-grey-10);
-	padding: 2rem 1rem 0 1rem;
+	padding: 3.5rem 1rem 0 1rem;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	transition: var(--transition);
@@ -784,12 +793,21 @@ Cart
 	top: 1rem;
 	left: 1rem;
 	cursor: pointer;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 100px;
+	outline: none;
+}
+
+.cart-close:hover {
+	background: #e5e5e5;
 }
 .cart header {
 	text-align: center;
 }
 .cart header h3 {
 	font-weight: 500;
+	text-transform: none;
 }
 .cart-total {
 	text-align: center;
